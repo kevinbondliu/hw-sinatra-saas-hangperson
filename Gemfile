@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.0'
+ruby '2.4.1'
 
 gem 'sinatra', '>= 1.4'
 gem 'sinatra-flash', '0.3.0'
@@ -11,6 +11,8 @@ group :development, :test do
 
   gem 'rspec', '3.3.0'
   gem 'rspec-autotest', '1.0.0'
+
+  gem 'json', '1.8.5'
 
   gem 'rack-test', '0.6.3'
   gem 'rack_session_access', '0.1.1'
