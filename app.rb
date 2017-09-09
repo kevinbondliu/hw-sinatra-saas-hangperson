@@ -40,7 +40,7 @@ class HangpersonApp < Sinatra::Base
   post '/guess' do
     letter = params[:guess].to_s[0]
     ### YOUR CODE HERE ###
-    if letter =~ /[^a-zA-Z]+/
+    if letter =~ /[a-zA-Z]+/
       if @game.guesses.include? letter or @game.wrong_guesses.include? letter
         flash[:message] = "You have already used that letter."
       else
