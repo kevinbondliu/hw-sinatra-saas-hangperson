@@ -61,7 +61,7 @@ class HangpersonApp < Sinatra::Base
     ### YOUR CODE HERE ###
     if @game.check_win_or_lose == :win
       redirect '/win'
-    elsif @game.check_win_or_lose == lose
+    elsif @game.check_win_or_lose == :lose
       redirect '/lose'
     else
       erb :show # You may change/remove this line
